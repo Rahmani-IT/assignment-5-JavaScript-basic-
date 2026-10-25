@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Basics - Assignment 5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>My Personal Profile</h1>
+        <p>JavaScript Basics: DOM Manipulation & Events</p>
+    </header>
+
+    <main>
+
+       
+        <section class="card">
+            <h2>Part 1: Personal Profile</h2>
+
+            <div id="profile">
+                <p><strong>Name:</strong> <span id="name"></span></p>
+                <p><strong>Birth Year:</strong> <span id="birthYear"></span></p>
+                <p><strong>Age:</strong> <span id="age"></span></p>
+                <p><strong>Developer:</strong> <span id="developer"></span></p>
+                <p><strong>Hobbies:</strong> <span id="hobbies"></span></p>
+                <p><strong>Total Hobbies:</strong> <span id="hobbyCount"></span></p>
+            </div>
+        </section>
+
+       
+        <section class="card">
+            <h2>Part 2: Create / Update Profile</h2>
+
+            <form id="profileForm">
+                <label for="username">Username:</label>
+                <input
+                    type="text"
+                    id="username"
+                    placeholder="Enter your name"
+                    required
+                >
+
+                <label for="birthYearInput">Birth Year:</label>
+                <input
+                    type="number"
+                    id="birthYearInput"
+                    placeholder="Enter your birth year"
+                    min="1901"
+                    required
+                >
+
+                <button type="submit">Create / Update Profile</button>
+            </form>
+
+            <p id="message" role="status"></p>
+        </section>
+
+        
+        <section class="card">
+            <h2>Part 3: My Tasks and Hobbies</h2>
+
+            <div class="item-controls">
+                <label for="newItemInput">New Task or Hobby:</label>
+
+                <input
+                    type="text"
+                    id="newItemInput"
+                    placeholder="Enter a task or hobby"
+                >
+
+                <button type="button" id="addItemButton">Add Item</button>
+                <button type="button" id="removeItemButton">Remove Item</button>
+            </div>
+
+           
+            <ul id="itemList"></ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Assignment #5 — JavaScript Basics</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
